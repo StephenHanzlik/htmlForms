@@ -1,42 +1,59 @@
 <!doctype>
 <html>
-  <head>
+
+<head>
     <title>HTML Forms</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/app.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <a href="index.html">Example 1</a>
-      <a href="example_02.html">Example 2</a>
-      <a href="example_03.html">Example 3</a>
-      <a href="example_04.html">Example 4</a>
-      <a href="example_05.html">Example 5</a>
-      <a href="example_06.html">Example 6</a>
+        <a href="index.html">Example 1</a>
+        <a href="example_02.html">Example 2</a>
+        <a href="example_03.html">Example 3</a>
+        <a href="example_04.html">Example 4</a>
+        <a href="example_05.html">Example 5</a>
+        <a href="example_06.html">Example 6</a>
     </nav>
     <h1>Form Fields: Example 2</h1>
 
-    <form action="" method="get">
+    <form action="example_02.html" method="get">
+        <div>
+            <label for="send_request">Send Request</label>
+            <input id="send_request" name="sendRequest" type="text">
+        </div>
+        <div>
+            <input name="hidden1" type="hidden" value="hidden text">
+            <input name="hidden2" type="hidden" value="hidden text">
+        </div>
+        <label for="checkbox_1">Checkbox One</label>
+        <input type="checkbox" name="checkbox1" id="checkbox_1" value="" checked>
+        <label for="checkbox_2">Checkbox Two</label>
+        <input type="checkbox" name="hidden2" id="checkbox_2" value="">
+        <label for="checkbox_3">Checkbox Three</label>
+        <input type="checkbox" name="checkbox3" id="checkbox_3" value="">
+        <button type="submit">submit</button>
     </form>
 
     <div class="query-params">
-      <h2>Query Params</h2>
-      <p>
-        This shows you all of the names and values that
-        have been sent to the server. (<a href="example_02.html">clear</a>)
-      </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Field Name</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+        <h2>Query Params</h2>
+        <p>
+            This shows you all of the names and values that have been sent to the server. (<a href="example_02.html">clear</a>)
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Field Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
-  </body>
+</body>
+
 </html>
