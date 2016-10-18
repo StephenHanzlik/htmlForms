@@ -1,42 +1,79 @@
 <!doctype>
 <html>
-  <head>
+
+<head>
     <title>HTML Forms</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/app.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <a href="index.html">Example 1</a>
-      <a href="example_02.html">Example 2</a>
-      <a href="example_03.html">Example 3</a>
-      <a href="example_04.html">Example 4</a>
-      <a href="example_05.html">Example 5</a>
-      <a href="example_06.html">Example 6</a>
+        <a href="index.html">Example 1</a>
+        <a href="example_02.html">Example 2</a>
+        <a href="example_03.html">Example 3</a>
+        <a href="example_04.html">Example 4</a>
+        <a href="example_05.html">Example 5</a>
+        <a href="example_06.html">Example 6</a>
     </nav>
     <h1>Form Fields: Example 1</h1>
 
     <form action="" method="get">
+        <div>
+            <label for="textinput">text input 1</label>
+            <input type="text" id="textinput" name="textinput_1" value="HTML forms are interesting">
+        </div>
+        <div>
+            <label for="anothertextinput">text input 2</label>
+            <input type="text" id="anothertextinput" name="textinput_2" autofocus placeholder="some text">
+        </div>
+        <div>
+            <label for="textArea1">text area 1</label>
+            <textarea name="text_area1" rows="8" cols="40" id="textArea1">Four dollar toast organic venmo, artisan taxidermy typewriter bushwick flannel pickled succulents gluten-free tilde pop-up. Church-key distillery bicycle rights la croix DIY letterpress. Meditation VHS cardigan plaid live-edge normcore. Food truck shoreditch forage ugh, blog YOLO cornhole. Kale chips slow-carb sustainable gastropub, mumblecore woke prism. Bitters art party bicycle rights trust fund polaroid succulents, normcore</textarea>
+        </div>
+        <div>
+            <label for="textArea2">text area 2</label>
+            <textarea name="textarea2" rows="8" cols="40" id="textArea2"></textarea>
+        </div>
+        <div>
+            <label for="emailAdress">Email adress: </label>
+            <input type="email" name="email" id="emailAdress" placeholder="Please enter your email adress">
+        </div>
+        <div>
+            <label for="dateFeild">Date</label>
+            <input type="date" name="date" id="dateFeild" value="">
+        </div>
+        <div>
+            <label for="numberInput">Numbe input</label>
+            <input type="number" name="number" id="numberInput" value="">
+        </div>
+        <div>
+            <label for="fileUpload">file uploads</label>
+            <input type="file" name="fileupload" id="fileUpload" value="">
+        </div>
+        <div>
+          <button type="submit">submit</button>
+        </div>
     </form>
 
     <div class="query-params">
-      <h2>Query Params</h2>
-      <p>
-        This shows you all of the names and values that
-        have been sent to the server. (<a href="index.html">clear</a>)
-      </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Field Name</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+        <h2>Query Params</h2>
+        <p>
+            This shows you all of the names and values that have been sent to the server. (<a href="index.html">clear</a>)
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Field Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
-  </body>
+</body>
+
 </html>
