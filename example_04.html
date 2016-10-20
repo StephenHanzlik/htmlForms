@@ -1,42 +1,78 @@
 <!doctype>
 <html>
-  <head>
+
+<head>
     <title>HTML Forms</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/app.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav>
-      <a href="index.html">Example 1</a>
-      <a href="example_02.html">Example 2</a>
-      <a href="example_03.html">Example 3</a>
-      <a href="example_04.html">Example 4</a>
-      <a href="example_05.html">Example 5</a>
-      <a href="example_06.html">Example 6</a>
+        <a href="index.html">Example 1</a>
+        <a href="example_02.html">Example 2</a>
+        <a href="example_03.html">Example 3</a>
+        <a href="example_04.html">Example 4</a>
+        <a href="example_05.html">Example 5</a>
+        <a href="example_06.html">Example 6</a>
     </nav>
     <h1>Form Fields: Example 4</h1>
 
-    <form action="" method="get">
+    <form action="example_04.html" method="get">
+        <label for="select1">Select One</label>
+        <select name="" id="select1">
+          <optgroup label="Numbered Choices">
+            <option value="option1">Option One</option>
+            <option value="option2">Option Two</option>
+            <option value="option3">Option Three</option>
+          </optgroup>
+        </select>
+        <label for="select2">Select Two</label>
+        <select name="" id="select2">
+          <optgroup label="Greek Options">
+            <option value="">Option Alpha</option>
+            <option value="">Option Beta</option>
+            <option value="">Option Alpha</option>
+          </optgroup>
+        </select>
+        <label for="select3">Select Three</label>
+        <select name="" id="select3">
+          <optgroup label="blanks">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </optgroup>
+        </select>
+        <label for="select4">Select Four</label>
+        <select name="" id="select4" multiple>
+          <optgroup label="Cards, or something?">
+            <option value="">Ace</option>
+            <option value="">Deuce</option>
+            <option value="">Trey</option>
+            <option value="">Quad</option>
+          </optgroup>
+        </select>
+        <button type="submit">Submit</button>
     </form>
 
     <div class="query-params">
-      <h2>Query Params</h2>
-      <p>
-        This shows you all of the names and values that
-        have been sent to the server. (<a href="example_04.html">clear</a>)
-      </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Field Name</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+        <h2>Query Params</h2>
+        <p>
+            This shows you all of the names and values that have been sent to the server. (<a href="example_04.html">clear</a>)
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Field Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
-  </body>
+</body>
+
 </html>

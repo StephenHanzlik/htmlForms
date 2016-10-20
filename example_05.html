@@ -18,6 +18,52 @@
     <h1>Form Fields: Example 5</h1>
 
     <form action="" method="get">
+      <div>
+      <label for="song_name">Song Name</label>
+      <input type="text" name="songName" id="song_name" value="somewhere over the rainbow"></input>
+    </div>
+    <div>
+      <label for="email">Songwriter Email</label>
+      <input type="text" name="emai_adress" id="email" value="Judy@garland.net">
+    </div>
+    <div>
+      <input type="checkbox" id="checkBox1">
+      <label for="checkBox1">Aca-awesome?</label>
+    </div>
+    <div>
+      <input type="checkbox" id="checkBox2">
+      <label for="checkBox2" name="will-win-regionals" value="true">Will win regionals?</label>
+    </div>
+    <div>
+      <label for="radio1">Slight Diva</label>
+      <input type="radio" name="diva-level" id="radio1" value="1">
+      <input type="radio" name="diva-level" value="2" selected>
+      <input type="radio" name="diva-level" id="radio2" value="3">
+      <label for="radio2">Extreme Diva</label>
+    </div>
+    <div>
+      <label for="comments">Comments</label>
+    </div>
+    <div>
+      <textarea cols="30" rows="2" id="comments" name="comment" value="Great song. Love it!"></textarea>
+    </div>
+    <div>
+      <label for="secret"><em>Super secret hidden feild...</em></label>
+      <input type="hidden" name="secret-field" value="42" id="secret">
+    </div>
+      <select name="soloist">
+        <option value="57">Mercedes Jones</option>
+        <option value="57">Jerry Garica</option>
+        <option  value="57">Phil Lesh</option>
+      </select>
+    <div>
+    <div>
+      <button type="submit">success</button>
+      <button type="submit">cancelled</button>
+      <button type="submit">I can <em>haz</em> HTML</button>
+    </div>
+
+    </div>
     </form>
 
     <div class="query-params">
